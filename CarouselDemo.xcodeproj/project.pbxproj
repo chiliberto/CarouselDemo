@@ -15,6 +15,10 @@
 		2044CDB41BB219ED0026660F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2044CDB31BB219ED0026660F /* IntroViewController.swift */; };
 		20D2CD811BB316A80018440D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CD801BB316A80018440D /* Common.swift */; };
 		20D2CD831BB339C20018440D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2CD821BB339C20018440D /* SignInViewController.swift */; };
+		20F38AA31BB3D5FC008314E6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F38AA21BB3D5FC008314E6 /* TutorialViewController.swift */; };
+		20F38AA51BB3DDCD008314E6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F38AA41BB3DDCD008314E6 /* FeedViewController.swift */; };
+		20F38AA71BB3DFE3008314E6 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F38AA61BB3DFE3008314E6 /* ConversationsViewController.swift */; };
+		20F38AA91BB3E0AD008314E6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F38AA81BB3E0AD008314E6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		2044CDB31BB219ED0026660F /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = ../IntroViewController.swift; sourceTree = "<group>"; };
 		20D2CD801BB316A80018440D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		20D2CD821BB339C20018440D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		20F38AA21BB3D5FC008314E6 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		20F38AA41BB3DDCD008314E6 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		20F38AA61BB3DFE3008314E6 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		20F38AA81BB3E0AD008314E6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,10 @@
 		2044CD951BB217A30026660F = {
 			isa = PBXGroup;
 			children = (
+				20F38AA81BB3E0AD008314E6 /* SettingsViewController.swift */,
+				20F38AA61BB3DFE3008314E6 /* ConversationsViewController.swift */,
+				20F38AA41BB3DDCD008314E6 /* FeedViewController.swift */,
+				20F38AA21BB3D5FC008314E6 /* TutorialViewController.swift */,
 				2044CDA01BB217A30026660F /* CarouselDemo */,
 				2044CD9F1BB217A30026660F /* Products */,
 			);
@@ -147,8 +159,12 @@
 				20D2CD811BB316A80018440D /* Common.swift in Sources */,
 				2044CDB41BB219ED0026660F /* IntroViewController.swift in Sources */,
 				2044CDA41BB217A30026660F /* ViewController.swift in Sources */,
+				20F38AA71BB3DFE3008314E6 /* ConversationsViewController.swift in Sources */,
 				20D2CD831BB339C20018440D /* SignInViewController.swift in Sources */,
+				20F38AA31BB3D5FC008314E6 /* TutorialViewController.swift in Sources */,
 				2044CDA21BB217A30026660F /* AppDelegate.swift in Sources */,
+				20F38AA51BB3DDCD008314E6 /* FeedViewController.swift in Sources */,
+				20F38AA91BB3E0AD008314E6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

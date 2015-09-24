@@ -81,35 +81,59 @@ class SignInViewController: UIViewController {
                 // optional code for what happens after the alert controller has finished presenting
             }
             
+        } else if PasswordField.text!.isEmpty {
+            
+            let alertController = UIAlertController(title: "Password Required", message: "Please enter your password.", preferredStyle: .Alert)
+            
+            // create an OK action
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                // handle response here.
+            }
+            // add the OK action to the alert controller
+            alertController.addAction(OKAction)
+            
+            
+            presentViewController(alertController, animated: true) {
+                // optional code for what happens after the alert controller has finished presenting
+            }
+            
         } else {
-        
-        
-        // Delay for 2 seconds, then run the code between the braces.
-        delay(2) {
             
-            if self.EmailField.text == "gg@gg.com" && self.PasswordField.text == "password" {
+            //Show a loading message
+            let alertController = UIAlertController(title: "Signing in...", message: "", preferredStyle: .Alert)
             
+            self.presentViewController(alertController, animated: true) {
+                // optional code for what happens after the alert controller has finished presenting
+            }
+            
+            // Delay for 2 seconds, then run the code between the braces.
+            delay(2) {
                 
+                alertController.dismissViewControllerAnimated(true, completion: nil)
                 
-            } else {
+                if self.EmailField.text == "email" && self.PasswordField.text == "password" {
                 
-                
-                let alertController = UIAlertController(title: "Sign In Failed", message: "Incorrect email or password.", preferredStyle: .Alert)
-                
-                // create an OK action
-                let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-                    // handle response here.
-                }
-                // add the OK action to the alert controller
-                alertController.addAction(OKAction)
-                
-                
-                self.presentViewController(alertController, animated: true) {
-                    // optional code for what happens after the alert controller has finished presenting
-                }
-                
-                
-            } //end if
+                    self.performSegueWithIdentifier("loginSegue", sender: self)
+    
+                    
+                } else {
+                    
+                    
+                    let alertController = UIAlertController(title: "Sign In Failed", message: "Incorrect email or password.", preferredStyle: .Alert)
+                    
+                    // create an OK action
+                    let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                        // handle response here.
+                    }
+                    // add the OK action to the alert controller
+                    alertController.addAction(OKAction)
+                    
+                    self.presentViewController(alertController, animated: true) {
+                        // optional code for what happens after the alert controller has finished presenting
+                    }
+                    
+                    
+                } //end if
             
             
         } //end delay
@@ -118,6 +142,13 @@ class SignInViewController: UIViewController {
         
     
     } //end OnSignInButton
+    
+    @IBAction func OnEmailFieldDidEnd(sender: AnyObject) {
+        
+        self.PasswordField.becomeFirstResponder()
+
+    }
+    
 
     /*
     // MARK: - Navigation
