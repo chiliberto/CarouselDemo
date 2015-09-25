@@ -59,13 +59,13 @@
                     <navigationItem key="navigationItem" id="kK1-b5-ou4"/>
                     <connections>
                         <outlet property="IntroImage" destination="EUH-uH-9eo" id="yGG-I2-2No"/>
-                        <outlet property="ScrollView" destination="bcb-Vq-XFg" id="jxt-yn-Bkk"/>
                         <outlet property="Tile1" destination="cZh-hH-fWj" id="e9e-pn-IVg"/>
                         <outlet property="Tile2" destination="wNt-jW-rVH" id="1bz-4T-PCw"/>
                         <outlet property="Tile3" destination="6EM-L1-hHm" id="Sig-gg-kPS"/>
                         <outlet property="Tile4" destination="iqp-GY-1OQ" id="2au-KV-V4U"/>
                         <outlet property="Tile5" destination="XHo-oU-WGs" id="FWF-Kh-PNB"/>
                         <outlet property="Tile6" destination="4ZY-Lm-FNT" id="36c-Vk-RO4"/>
+                        <outlet property="scrollView" destination="bcb-Vq-XFg" id="BjZ-ag-SnZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
