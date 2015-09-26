@@ -23,10 +23,11 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
     
     var tiles: [UIImageView] = []
     var tileRotateTo: [CGFloat] = []
+    var tileScaleTo: [CGFloat] = []
+    var tileFinalX: [CGFloat] = []
+    var tileFinalY: [CGFloat] = []
     var tileOriginalX: [CGFloat] = []
     var tileOriginalY: [CGFloat] = []
-    var tileNewX: [CGFloat] = []
-    var tileNewY: [CGFloat] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
         tiles.append(Tile6)
         
         tileRotateTo = [-10, -15, 10, 10, 5, -15]
+        tileScaleTo = [1, 2, 2, 2, 2, 2]
         
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
@@ -52,12 +54,12 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
         
         for i in 0...5 {
             
-            tileOriginalX.append(tiles[i].center.x)
-            tileOriginalY.append(tiles[i].center.y)
+            tileFinalX.append(tiles[i].center.x)
+            tileFinalY.append(tiles[i].center.y)
             
         }
         
-        tileNewX = [
+        tileOriginalX = [
             CGFloat(30),
             screenWidth - 40,
             screenWidth - 50,
@@ -66,7 +68,7 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
             screenWidth/2
         ]
 
-        tileNewY = [
+        tileOriginalY = [
             screenHeight - 20,
             screenHeight - 20,
             screenHeight - 100,
@@ -76,9 +78,14 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
         ]
         
         for i in 0...5 {
+
             tiles[i].transform = CGAffineTransformMakeRotation(CGFloat(tileRotateTo[i] * CGFloat(M_PI) / 180))
-            tiles[i].center.x = tileNewX[i]
-            tiles[i].center.y = tileNewY[i]
+            
+            tiles[i].center.x = tileOriginalX[i]
+            tiles[i].center.y = tileOriginalY[i]
+            
+            //tiles[i].transform = CGAffineTransformMakeScale( tileScaleTo[i], tileScaleTo[i] )
+            
         }
 
     }
@@ -92,14 +99,25 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView!) {
         // This method is called as the user scrolls
 
-        var y = scrollView.contentOffset.y
-        print(y)
+        let y = scrollView.contentOffset.y
+        //print(y)
         
         for i in 0...5 {
+            
+            //Rotate
             tiles[i].transform = CGAffineTransformMakeRotation(CGFloat((1 - y/568) * tileRotateTo[i] * CGFloat(M_PI) / 180))
-        }
 
-//        Tile1.center.y = 
+            //Reposition
+            let xNew = tileOriginalX[i] + y/568*(tileFinalX[i] - tileOriginalX[i])
+            let yNew = tileOriginalY[i] + y/568*(tileFinalY[i] - tileOriginalY[i])
+            
+            tiles[i].center.x = xNew
+            tiles[i].center.y = yNew
+            
+            //Scale
+            //tiles[i].transform = CGAffineTransformMakeScale( (1 - y/568) * tileScaleTo[i], (1 - y/568) * tileScaleTo[i] )
+
+        }
 
     }
     
