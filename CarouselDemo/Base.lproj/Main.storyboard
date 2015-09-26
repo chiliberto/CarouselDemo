@@ -29,28 +29,28 @@
                                     </button>
                                 </subviews>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="cZh-hH-fWj">
-                                <rect key="frame" x="48" y="182" width="153" height="152"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile6" id="4ZY-Lm-FNT">
-                                <rect key="frame" x="201" y="336" width="76" height="75"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile5" id="XHo-oU-WGs">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="intro_tile5" id="XHo-oU-WGs">
                                 <rect key="frame" x="123" y="336" width="76" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile4" id="iqp-GY-1OQ">
-                                <rect key="frame" x="47" y="335" width="76" height="76"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="intro_tile6" id="4ZY-Lm-FNT">
+                                <rect key="frame" x="201" y="336" width="76" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile3" id="6EM-L1-hHm">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="intro_tile3" id="6EM-L1-hHm">
                                 <rect key="frame" x="201" y="259" width="76" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile2" id="wNt-jW-rVH">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="intro_tile4" id="iqp-GY-1OQ">
+                                <rect key="frame" x="47" y="335" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="intro_tile2" id="wNt-jW-rVH">
                                 <rect key="frame" x="201" y="182" width="76" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="intro_tile1" id="cZh-hH-fWj">
+                                <rect key="frame" x="48" y="182" width="153" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
