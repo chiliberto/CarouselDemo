@@ -263,6 +263,10 @@
                                     <segue destination="BmQ-4M-qiR" kind="push" id="fck-7f-JRc"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="scrubber" id="4Sf-u7-izz">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -324,7 +328,6 @@
                                         <rect key="frame" x="0.0" y="621" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="onBackButton:" destination="vKX-Db-Z5d" eventType="touchUpInside" id="i54-xL-QXv"/>
                                             <segue destination="Wam-gx-mG8" kind="modal" animates="NO" id="VXP-6Z-Lar"/>
                                         </connections>
                                     </button>
@@ -403,6 +406,7 @@
         <image name="intro_tile5" width="76" height="75"/>
         <image name="intro_tile6" width="76" height="75"/>
         <image name="one_field_form" width="320" height="55"/>
+        <image name="scrubber" width="320" height="36"/>
         <image name="settings" width="320" height="695"/>
         <image name="settings_nav" width="320" height="64"/>
         <image name="sign_in_buttons" width="320" height="104"/>
