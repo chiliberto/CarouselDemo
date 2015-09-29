@@ -1,7 +1,5 @@
 # CarouselDemo
 
-# Dropbox Demo
-
 This is an iOS demo application which shows a walkthrough of the Welcome screens, Create Account and Sign Up.
 
 Time spent: 6 hours spent in total
@@ -20,13 +18,6 @@ Sign In
 * [x] Required: User sees an error alert when entering the wrong email/password combination.
 * [x] Required: User is taken to the tutorial screens upon entering the correct email/password combination.
 * [x] Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
-* [ ] Optional: On appear, scale the form up and fade it in.
-
-Sign Up
-* [ ] Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
-* [ ] Optional: Tapping the Agree to Terms checkbox selects the checkbox.
-* [ ] Optional: Optional: Tapping on Terms shows a webview with the terms.
-* [ ] Optional: Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
 
 Tutorial Screens
 * [x] Required: User can page between the screens
@@ -41,6 +32,17 @@ Image Timeline
 Settings
 * [x] Required: User can dismiss the settings screen.
 * [x] Required: User can log out
+
+Not completed:
+
+Sign In
+* [ ] Optional: On appear, scale the form up and fade it in.
+
+Sign Up
+* [ ] Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
+* [ ] Optional: Tapping the Agree to Terms checkbox selects the checkbox.
+* [ ] Optional: Optional: Tapping on Terms shows a webview with the terms.
+* [ ] Optional: Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
 
 Learn more about Carousel
 * [ ] Optional: Show the "Learn more about Carousel" button in the photo timeline.
