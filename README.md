@@ -56,6 +56,6 @@ Learn more about Carousel
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](CarouselDemo.gif)(CarouselDemo.mov)
+[![Video Walkthrough](CarouselDemo.gif)](CarouselDemo.mov)
 
 
